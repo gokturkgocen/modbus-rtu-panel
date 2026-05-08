@@ -1,6 +1,7 @@
 # Modbus RTU HMI Control Panel
 
-A Python-based Modbus RTU control panel application featuring a modern, sleek interface inspired by the "Matrix" aesthetic. This software allows you to seamlessly monitor and control multiple Modbus devices (slaves) concurrently via serial port connections (RS485/RS232).
+A Python-based Modbus RTU control panel for monitoring and controlling multiple
+RS485 / RS232 slave devices from a desktop UI.
 
 ## Key Features
 
@@ -8,7 +9,7 @@ A Python-based Modbus RTU control panel application featuring a modern, sleek in
 - **Sequential & Priority Polling**: A background polling mechanism ensures continuous data updates, while a queue-based priority system handles user commands (write operations) with minimal latency.
 - **Detailed Error Tracking**: Real-time display of device connection issues, communication lag, and Modbus-specific errors directly on the interface.
 - **Customizable Parameters**: Easy-to-use interface to access and modify Modbus registers for each device, including opening/closing speeds, torque, or custom durations.
-- **Matrix-Themed UI**: Built using `CustomTkinter`, the application features a dark background with vibrant neon-green accents, delivering a professional, terminal-style aesthetic.
+- **CustomTkinter UI**: Dark operator-facing interface with status cards and action controls.
 
 ## Requirements
 
@@ -29,8 +30,8 @@ pip install -r requirements.txt
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repo-url>
-   cd MODBUS
+   git clone https://github.com/gokturkgocen/modbus-rtu-panel.git
+   cd modbus-rtu-panel
    ```
 
 2. Install the necessary Python packages:
